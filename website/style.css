@@ -1,0 +1,128 @@
+body {
+    background: linear-gradient(90deg, rgba(2, 204, 186, 1) 46%, rgba(0, 212, 255, 1) 100%);
+    font-family: sans-serif;
+}
+
+#app {
+    display: grid;
+    grid-auto-rows: minmax(150px, auto);
+    /* grid-template-columns:  */
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(2, 204, 186, 1) 46%, rgba(0, 212, 255, 1) 100%);
+    justify-content: center;
+    grid-gap: 1em;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+}
+
+#app .container {
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    top: 5%;
+    left: 25%;
+    position: absolute;
+    border: 3px solid #444;
+    border-radius: 69px;
+    background: linear-gradient(90deg, rgba(0, 212, 255, 1) 50%, rgba(2, 204, 186, 1)30%);
+    height: 70vh;
+    box-shadow: 0px 8px 60px #444;
+    padding: 80px 180px;
+}
+
+#app .container .holder-headline {
+    color: #f0d43a;
+    font-size: 200%;
+    margin-bottom: 5px;
+    text-shadow: 0px 2px 3px #000;
+}
+
+#app .container label {
+    display: block;
+    font: 80%;
+    margin-bottom: 15px;
+}
+
+#app .container input {
+    display: block;
+    height: 60px;
+    width: 390px;
+    background: #22b2da;
+    color: #f0d43a;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    text-align: center;
+}
+
+button {
+    width: 400px;
+    height: 70px;
+    background: #3b4a6b;
+    color: #f0d43a;
+    font-size: 26px;
+    font-family: sans-serif;
+    border: none;
+    display: block;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+textarea {
+    background: #22b2da;
+    color: #f0d43a;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.container .title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#entryHolder {
+    border: 5px #f0d43a solid;
+    background: linear-gradient(90deg, rgba(2, 204, 186, 1) 46%, rgba(0, 212, 255, 1) 100%);
+}
+
+
+/* Reset style for HTML element on active to have no border*/
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+input:not([type="submit"]):focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+    opacity: 0;
+    transition: .3s;
+}
+
+
+/* Style for Placeholder Text*/
+
+::placeholder {
+    /* Firefox, Chrome, Opera */
+    color: #f0d43a;
+    font-family: sans-serif;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #f0d43a;
+    font-family: sans-serif;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #f0d43a;
+    font-family: sans-serif;
+}
